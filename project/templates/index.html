@@ -1,7 +1,42 @@
 {% extends 'loggedin.html' %} 
 
 {% block content %} 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.4.0/dist/animxyz.min.css">
+
     <div class="container">
-        <p class="title">Hello there {{user.username}}!</p>
-    </div>
+  <button id="create" class="btn">Create Class</button>
+</div>
+<style>
+  .container {
+  height: 100%;
+  top:10px;
+  
+  
+ 
+}
+
+.btn {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  
+  }
+
+.btn:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+  cursor:pointer;
+}
+</style>
 {% endblock %}
